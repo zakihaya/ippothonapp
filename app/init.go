@@ -1,6 +1,9 @@
 package app
 
-import "github.com/robfig/revel"
+import (
+    "github.com/robfig/revel"
+    "fmt"
+)
 
 func init() {
 	// Filters is the default set of global filters.
@@ -19,9 +22,10 @@ func init() {
 		revel.ActionInvoker,           // Invoke the action.
 	}
 
+    fmt.Println("a")
 	// register startup functions with OnAppStart
 	// ( order dependent )
-	// revel.OnAppStart(InitDB())
+	//  revel.OnAppStart(InitDB())
 	// revel.OnAppStart(FillCache())
 }
 
