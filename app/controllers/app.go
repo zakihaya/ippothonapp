@@ -21,3 +21,7 @@ func (c App) Index() revel.Result {
 
     return c.Render(rows)
 }
+
+func (c App) Bijo() revel.Result {
+    return c.Render()
+}
