@@ -6,7 +6,6 @@ import (
     _ "github.com/mattn/go-sqlite3"
     "github.com/revel/revel" // あとで使います
     "ippothonapp/app/models" // revel new APP_NAME の APP_NAME
-    "fmt"
 )
 
 var (
@@ -14,7 +13,6 @@ var (
 )
 
 func InitDB() {
-    fmt.Println("a")
     db, err := sql.Open("sqlite3", "./tmp/scrape.db")
     if err != nil {
         panic(err.Error())
